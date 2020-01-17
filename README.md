@@ -1,10 +1,16 @@
 # Code for the paper [DMCL: Distillation Multiple Choice Learning for Multimodal Action Recognition](https://arxiv.org/abs/1912.10982)
 
 ## Overview
+``codebase/preproc/convert*``: scripts to produce tfrecords. Corresponds to step 2 and 3 of the Data Pipeline section described below.
+
 ``codebase/utils.py``: essentially contains functions to deal with the infrastructure, like building filepaths and read lists of files. This file contains the paths to data and lists that should be modified to match your setup.   
 ``codebase/restorers.py``: functions to restore checkpoints.  
 ``codebase/parsers.py``: functions to parse tfrecords, i.e. to read tfrecords and build training and testing batches.  
+
+
 ``nets/resnet_official/``: forked from tensorflow resnet official repo. It is modified to reflect the model proposed in [A Closer Look at Spatiotemporal Convolutions for Action Recognition, CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Tran_A_Closer_Look_CVPR_2018_paper.pdf).   
+
+
 ``dmcl.py``: implements the method presented in the paper.
 
 ### Prerequisites
