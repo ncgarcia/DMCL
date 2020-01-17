@@ -1,6 +1,8 @@
 # Code for the paper [DMCL: Distillation Multiple Choice Learning for Multimodal Action Recognition](https://arxiv.org/abs/1912.10982)
 
 ## Overview
+
+``codebase/preproc/make_lists``: scripts to produce list of train/val/test files. Corresponds to step 1 of the Data Pipeline section described below.  
 ``codebase/preproc/convert*``: scripts to produce tfrecords. Corresponds to step 2 and 3 of the Data Pipeline section described below.
 
 ``codebase/utils.py``: essentially contains functions to deal with the infrastructure, like building filepaths and read lists of files. This file contains the paths to data and lists that should be modified to match your setup.   
