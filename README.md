@@ -46,6 +46,8 @@ For validation and testing: dmcl.py reads all the validation and testing video_i
 It then proceeds to build the paths to each of the ten clips per video, produced in *step 3*. 
 The frames of these clips are used as input to the corresponding modality network.
 
+Suggestions to improve the usability of the data pipeline are very welcome.
+
 ## Training
 ```
 python dmcl.py --dset=nwucla --eval=cross_view --temp=2 
